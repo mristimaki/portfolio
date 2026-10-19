@@ -32,7 +32,7 @@ My personal developer portfolio, built from scratch with HTML, CSS and vanilla J
 ## Contact
 
 - GitHub: [@mristimaki](https://github.com/mristimaki)
-- LinkedIn: [www.linkedin.com/in/maryam-rutqvist-ristimäki-08b41438b]
+- LinkedIn: www.linkedin.com/in/maryam-rutqvist-ristimäki-08b41438b
 
 ---
 
