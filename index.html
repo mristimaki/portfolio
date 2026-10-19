@@ -11,7 +11,74 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800;900&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header>
+        <a href="#top">MRR.</a>
+        <nav>
+            <a href="#om">Om mig</a>
+            <a href="#projekt">Projekt</a>
+            <a href="#kontakt">Kontakt</a>
+            <button type="button">SV</button>
+            <button type="button">EN</button>
+        </nav>
+    </header>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <p>Portfolio av Maryam Rutqvist Ristimäki</p>
+            <h1>Maryam Rosanna Rutqvist Ristimäki</h1>
+            <p>Utvecklare som bygger webbsidor med lite extra personlighet.</p>
+            <a href="#projekt" >Se mina projekt</a>
+        </section>
+
+        <!-- OM MIG -->
+        <section id="om">
+            <img src="" alt="Maryam">
+            <p>Vem är jag?</p>
+            <h2>Hej! Jag heter Maryam</h2>
+            <p>Några meningar om mig själv..</p>
+            <ul>
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>Git &amp; GitHub</li>
+            </ul>
+        </section>
+
+        <!-- PROJEKT -->
+        <section id="projekt">
+            <h2>Mina projekt</h2>
+            <p>Klicka på ett projekt för att se koden på GitHub.</p>
+
+            <a href="https://github.com/mristimaki/portfolio.git" target="_blank">
+                <img src="" alt="">
+                <h3>Projektnamn</h3>
+                <p>Kort beskrivning av projektet.</p>
+            </a>
+        </section>
+
+        <!-- KONTAKT -->
+        <section id="kontakt">
+            <h2>Låt oss bygga något bra ihop</h2>
+            <p>min@mail.se</p>
+
+            <form>
+                <label for="name">Namn</label>
+                <input id="name" name="name" required>
+
+                <label for="email">E-post</label>
+                <input id="email" type="email" name="email" required>
+
+                <label for="message">Meddelande</label>
+                <textarea name="message" id="message" required></textarea>
+
+                <button type="submit">Skicka</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Maryam Rutqvist Ristimäki</p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
