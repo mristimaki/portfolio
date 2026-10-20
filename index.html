@@ -11,15 +11,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <a href="#top">MRR.</a>
-      <nav>
-        <a href="#om">Om mig</a>
-        <a href="#projekt">Projekt</a>
-        <a href="#kontakt">Kontakt</a>
-        <button type="button">SV</button>
-        <button type="button">EN</button>
-      </nav>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="#top">MRR<span>.</span></a>
+        <nav aria-label="Huvudmeny">
+          <a class="nav-link" href="#om">Om mig</a>
+          <a class="nav-link" href="#projekt">Projekt</a>
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+
+          <div class="lang">
+            <button type="button" aria-pressed="true">SV</button>
+            <button type="button" aria-pressed="false">EN</button>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main id="top">

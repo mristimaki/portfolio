@@ -93,3 +93,80 @@ p {
     outline-offset: 3px;
     border-radius: 6px;
 }
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(20, 18, 20, 0.82);
+    backdrop-filter: blur(10px);
+}
+
+.site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.logo {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--pink);
+}
+
+.nav-link {
+    display: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--pink);
+}
+
+.lang {
+    display: flex;
+    border: 1.5px solid var(--cream);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.lang button {
+    font: 600 0.75rem/1 var(--body);
+    letter-spacing: 0.1rem;
+    background: none;
+    color: var(--cream);
+    border: 0;
+    padding: 8px 11px;
+    cursor: pointer;
+}
+
+.lang button[aria-pressed="true"] {
+    background: var(--pink);
+    color: var(--ink);
+}
+
+/* Media querys */
+@media (min-width:640px) {
+    .nav-link {
+        display: inline;
+    }
+}
