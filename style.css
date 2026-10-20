@@ -50,3 +50,46 @@ a {
     padding-left: 16px;
     padding-right: 16px;
 }
+
+h1,
+h2,
+h3 {
+    font-family: var(--display);
+    font-weight: 800;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(3rem, 12vw, 10rem);
+    color: var(--pink);
+}
+
+h2 {
+    font-size: clamp(2.75rem, 8vw, 6.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
+}
+
+p {
+    max-width: 60ch;
+}
+
+.eyebrow {
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+:focus-visible {
+    outline: 3px solid var(--pink);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
