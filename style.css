@@ -1,3 +1,52 @@
+:root {
+  /* Färger */
+  --pink: #E39BB7;
+  --pink-deep: #D27FA0;
+  --cream: #FFF6EE;
+  --ink: #141214;
+  --ash: #3A3538;
+  --fog: #8E8689;
+
+  /* Typsnitt */
+  --display: "League Spartan", "Arial Black", sans-serif;
+  --body: "Quicksand", "Trebuchet MS", sans-serif;
+  --mono: "JetBrains Mono", monospace;
+
+  /* Övrigt */
+  --radius: 22px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: #E39BB7;
+    margin: 0;
+    background: var(--ink);
+    color: var(--cream);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }

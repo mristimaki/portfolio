@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maryam Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
     <meta name="description" content="Portfolio - Maryam Rutqvist Ristimäki" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800;900&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800;900&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -36,46 +33,52 @@
 
       <!-- OM MIG -->
       <section id="om">
-        <img src="" alt="Maryam" />
-        <p>Vem är jag?</p>
-        <h2>Hej! Jag heter Maryam</h2>
-        <p>Några meningar om mig själv..</p>
-        <ul>
-          <li>HTML &amp; CSS</li>
-          <li>JavaScript</li>
-          <li>Git &amp; GitHub</li>
-        </ul>
+        <div class="wrap">
+          <img src="" alt="Maryam" />
+          <p>Vem är jag?</p>
+          <h2>Hej! Jag heter Maryam</h2>
+          <p>Några meningar om mig själv..</p>
+          <ul>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div> 
       </section>
 
       <!-- PROJEKT -->
       <section id="projekt">
-        <h2>Mina projekt</h2>
-        <p>Klicka på ett projekt för att se koden på GitHub.</p>
+        <div class="wrap">
+          <h2>Mina projekt</h2>
+          <p>Klicka på ett projekt för att se koden på GitHub.</p>
 
-        <a href="https://github.com/mristimaki/portfolio.git" target="_blank">
+          <a href="https://github.com/mristimaki/portfolio.git" target="_blank">
           <img src="" alt="" />
           <h3>Projektnamn</h3>
           <p>Kort beskrivning av projektet.</p>
-        </a>
+          </a>
+        </div>
       </section>
 
       <!-- KONTAKT -->
       <section id="kontakt">
-        <h2>Låt oss bygga något bra ihop</h2>
-        <p>min@mail.se</p>
+        <div class="wrap">
+          <h2>Låt oss bygga något bra ihop</h2>
+          <p>min@mail.se</p>
 
-        <form>
-          <label for="name">Namn</label>
-          <input id="name" name="name" required />
+          <form>
+            <label for="name">Namn</label>
+            <input id="name" name="name" required />
 
-          <label for="email">E-post</label>
-          <input id="email" type="email" name="email" required />
+            <label for="email">E-post</label>
+            <input id="email" type="email" name="email" required />
 
-          <label for="message">Meddelande</label>
-          <textarea name="message" id="message" required></textarea>
+            <label for="message">Meddelande</label>
+            <textarea name="message" id="message" required></textarea>
 
-          <button type="submit">Skicka</button>
-        </form>
+            <button type="submit">Skicka</button>
+          </form>
+        </div>
       </section>
     </main>
 
