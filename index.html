@@ -76,45 +76,79 @@
                 <li>Git &amp; GitHub</li>
               </ul>
             </div>
-            
+
           </div>
         </div> 
       </section>
 
       <!-- PROJEKT -->
-      <section id="projekt">
+      <section id="projekt" class="projects">
         <div class="wrap">
-          <h2>Mina projekt</h2>
-          <p>Klicka på ett projekt för att se koden på GitHub.</p>
-
-          <a href="https://github.com/mristimaki/portfolio.git" target="_blank">
-          <img src="" alt="" />
-          <h3>Projektnamn</h3>
-          <p>Kort beskrivning av projektet.</p>
-          </a>
+          <div class="proj-head">
+            <h2>Mina projekt</h2>
+            <p>Ett urval av saker jag har byggt. Klicka på ett projekt för att se koden på GitHub.</p>
         </div>
-      </section>
 
-      <!-- KONTAKT -->
-      <section id="kontakt">
-        <div class="wrap">
-          <h2>Låt oss bygga något bra ihop</h2>
-          <p>min@mail.se</p>
-
-          <form>
-            <label for="name">Namn</label>
-            <input id="name" name="name" required />
-
-            <label for="email">E-post</label>
-            <input id="email" type="email" name="email" required />
-
-            <label for="message">Meddelande</label>
-            <textarea name="message" id="message" required></textarea>
-
-            <button type="submit">Skicka</button>
-          </form>
+        <!-- Projekt 1 -->
+        <div class="grid">
+          <a class="card" href="https://github.com/mristimaki/pottery-hut" target="_blank" rel="noopener">
+            <div class="shot">
+            <img src="bilder/projekt-1.png" alt="" />
+            <span class="badge">↗ Se koden</span>
         </div>
-      </section>
+        <div class="meta">
+          <h3>The Pottery Hut</h3>
+          <p>En webbshop för keramik med produktkatalog, sökning, varukorg och adminpanel. Frontend i Angular som pratar med ett eget REST API byggt i Express.</p>
+          <!-- EN: A ceramics webshop with a product catalog, search, cart and admin panel. Angular frontend talking to my own REST API built with Express. -->
+          <div class="tags">
+            <span>Angular</span>
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projekt 2 -->
+       <a class="card" href="https://github.com/alvinatolvgard/Grupp1-Recipe-app" target="_blank" rel="noopener">
+            <div class="shot">
+            <img src="bilder/projekt-2.png" alt="" />
+            <span class="badge">↗ Se koden</span>
+        </div>
+        <div class="meta">
+          <h3>CodeCuisine</h3>
+          <p>Gruppprojekt: en receptapp där man kan söka, filtrera och spara favoriter. Jag ansvarade för state management med Zustand, receptsidan och kopplingen mot TheMealDB.</p>
+          <!-- EN: Group project: a recipe app for searching, filtering and saving favorites. I was responsible for state management with Zustand, the recipe page and the TheMealDB integration. -->
+          <div class="tags">
+            <span>React</span>
+            <span>Zustand</span>
+            <span>REST API</span>
+            <span>Vite</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projekt 3 -->
+      <a class="card" href="https://github.com/mristimaki/pottery-hut-api" target="_blank" rel="noopener">
+            <div class="shot">
+            <img src="bilder/projekt-3.png" alt="" />
+            <span class="badge">↗ Se koden</span>
+        </div>
+        <div class="meta">
+          <h3>The Pottery Hut API</h3>
+          <p>Mitt första projekt på utbildningen: en nyhetssajt med flera tematiska sidor om natur, mat och odling. Byggd från grunden med HTML och CSS.</p>
+          <!-- EN: My first project in my studies: a news site with themed pages about nature, food and growing. Built from scratch with HTML and CSS. -->
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsiv design</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
     </main>
 
     <footer>

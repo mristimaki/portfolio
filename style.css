@@ -290,6 +290,94 @@ p {
   transform: translateY(-3px) rotate(-2deg);
 }
 
+.projects .wrap {
+    padding-top: clamp(64px, 9vw, 110px);
+    padding-bottom: clamp(64px, 9vw, 110px);
+}
+
+.proj-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.proj-head h2 {
+    color: var(--pink);
+}
+
+.proj-head p {
+    margin: 0;
+    color: #cfc6c9;
+    max-width: 40ch;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    display: block;
+    text-decoration: none;
+    background: #211e20;
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.45s, box-shadow 0.3s;
+}
+
+.shot {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--ash);
+}
+
+.shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s, transform 0.7s;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--cream);
+    color: var(--ink);
+    font: 600 0.75rem/1 var(--mono);
+    padding: 8px 10px;
+    border-radius: 999px;
+}
+
+.meta {
+    display: grid;
+    gap: 8px;
+    padding: 20px 22px 24px;
+}
+
+.meta p {
+    margin: 0;
+    color: #cfc6c9;
+    font-size: 0.95rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.tags span {
+    font: 55 0.75rem/1 var(--mono);
+    color: var(--pink);
+    border: 1px solid #5a4850;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
 /* Media querys */
 @media (min-width:640px) {
     .nav-link {
@@ -317,5 +405,45 @@ p {
     .portrait {
         width: 100%;
         max-width: 280px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+    }
+
+    .proj-head {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+/* Hover-effekter, bara för enheter med mus */
+@media (hover: hover) {
+    .shot img {
+        filter: grayscale(1);
+    }
+
+    .badge {
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-6px) rotate(-0.6deg);
+        box-shadow: 0 18px 40px rgba(227, 155, 183, 0.18);
+    }
+
+    .card:hover .shot img {
+        filter: none;
+        transform: scale(1.05);
+    }
+
+    .card:hover .badge,
+    .card:focus-visible .badge {
+        opacity: 1;
+        transform: none;
     }
 }
